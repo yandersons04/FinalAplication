@@ -20,6 +20,18 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+        if (id == R.id.action_settings){
+            Toast.makeText(getApplicationContext(), "Minhas Consigurações", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
         int id = menuItem.getItemId();
