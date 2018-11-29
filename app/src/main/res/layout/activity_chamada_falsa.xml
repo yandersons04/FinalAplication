@@ -7,7 +7,7 @@
     tools:context=".ChamadaFalsa">
 
     <Button
-        android:id="@+id/btn_apagar"
+        android:id="@+id/btn_clear"
         android:layout_width="45dp"
         android:layout_height="119dp"
         android:layout_marginTop="8dp"

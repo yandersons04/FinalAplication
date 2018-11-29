@@ -22,7 +22,7 @@ public class ChamadaFalsa extends AppCompatActivity {
         setContentView(R.layout.activity_chamada_falsa);
 
         txtdisplay = findViewById(R.id.txt_display);
-        Button btnApagar = findViewById(R.id.btn_clear);
+        Button btnapagar = findViewById(R.id.btn_clear);
         Button btn0 = findViewById(R.id.btn_0);
         Button btn1 = findViewById(R.id.btn_1);
         Button btn2 = findViewById(R.id.btn_2);
@@ -49,9 +49,8 @@ public class ChamadaFalsa extends AppCompatActivity {
         btn9.setOnClickListener(myListener);
         btnasterisco.setOnClickListener(myListener);
         btnjogodavelha.setOnClickListener(myListener);
-        btnApagar.setOnClickListener(myListener);
         btnligar.setOnClickListener(myListener);
-
+        btnapagar.setOnClickListener(myListener);
 
     }
 
@@ -96,7 +95,7 @@ public class ChamadaFalsa extends AppCompatActivity {
                 case (R.id.btn_jogodavelha):
                     setDisplayText("#");
                     break;
-                case (R.id.btn_apagar):
+                case (R.id.btn_clear):
                     if(memoria.length() > 0) {
                         memoria = memoria.substring(0, memoria.length() - 1);
                         txtdisplay.setText(memoria);

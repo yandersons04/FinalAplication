@@ -87,8 +87,6 @@ public class MainActivity extends AppCompatActivity implements
             startActivity(intent);
 
             Toast.makeText(getApplicationContext(), "Abrir Chamada Falsa", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.perfil) {
-            Toast.makeText(getApplicationContext(), "Abrir Perfil", Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
